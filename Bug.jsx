@@ -1,0 +1,1 @@
+In React Router Dom v6, navigating with a `Navigate` component inside a route that's conditionally rendered based on a prop can lead to unexpected behavior.  If the condition changes *after* the component has mounted, the `Navigate` might not trigger correctly. This often happens when a prop's value updates asynchronously (e.g., fetched from an API).
